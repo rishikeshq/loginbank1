@@ -29,7 +29,7 @@ export class LoginpageComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  login(){ //(dollor method
+  login(){ //(ng method two way binding
     
     var acnum=this.acno
     var psw=this.pass
