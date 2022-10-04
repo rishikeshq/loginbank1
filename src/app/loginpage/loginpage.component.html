@@ -3,11 +3,11 @@
      <form class="action=">
         <h1  class="text-dark text-center mt-2">login page</h1>
         <br>
-        <input class=" form-control border border-dark" (change)="acchange($event)" type="text" id="acid" [placeholder]="acct">
+        <input class=" form-control border border-dark" #acno type="text" id="acid" [placeholder]="acct">
         <br>
-        <input id="pass" (change)="pswchange($event)" class="form-control border border-dark" type="text" placeholder="password">
+        <input id="pass" #psw class="form-control border border-dark" type="text" placeholder="password">
         <div class="text-center">
-            <button (click)="login()"  class=" btn btn-outline-dark mt-4">Login</button>
+            <button (click)="login(acno,psw)"  class=" btn btn-outline-dark mt-4">Login</button>
         </div>
         <div class="text-center">
            <p class="text-danger mt-3">if u dont have an account?</p><button class="btn btn-outline-dark">CREATE</button> 
