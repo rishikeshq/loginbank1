@@ -29,44 +29,10 @@ export class LoginpageComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // login(){ (dollor method)
+  login(){ //(dollor method
     
-  //   var acnum=this.acno
-  //   var psw=this.pass
-  //   let userdetails=this.userdetails
-
-  //   if(acnum in userdetails){
-  //     if(psw==userdetails[acnum]['password']){
-  //       alert('login successfull')
-  //     }
-  //     else{
-  //       alert('your password is incorrect')
-  //     }
-  //   }
-  //   else{
-  //     alert('user not exist or incorrect ac number')
-//   //   }
-
-  // for dollor method 
-//   acchange(event:any){
-//     this.acno=(event.target.value)
-//     console.log(this.acno);
-//  } 
-
-//  pswchange(event:any){
-//   this.pass=event.target.value
-//  console.log(this.pass);
-    
-  // }
-
-
-  login(a:any,b:any){
-
-    console.log(a.value);
-    console.log(b.value);
-    
-    var acnum=a.value
-    var psw=b.value
+    var acnum=this.acno
+    var psw=this.pass
     let userdetails=this.userdetails
 
     if(acnum in userdetails){
@@ -80,18 +46,57 @@ export class LoginpageComponent implements OnInit {
     else{
       alert('user not exist or incorrect ac number')
     }
+  }
+}
+
+
+  // for dollor method 
+//   acchange(event:any){
+//     this.acno=(event.target.value)
+//     console.log(this.acno);
+//  } 
+
+//  pswchange(event:any){
+//   this.pass=event.target.value
+//  console.log(this.pass);
+    
+  // }
+   
+
+  // template rendering method 
+
+//   login(a:any,b:any){
+
+//     console.log(a.value);
+//     console.log(b.value);
+    
+//     var acnum=a.value
+//     var psw=b.value
+//     let userdetails=this.userdetails
+
+//     if(acnum in userdetails){
+//       if(psw==userdetails[acnum]['password']){
+//         alert('login successfull')
+//       }
+//       else{
+//         alert('your password is incorrect')
+//       }
+//     }
+//     else{
+//       alert('user not exist or incorrect ac number')
+//     }
 
     
-  }
- acchange(event:any){
-    this.acno=(event.target.value)
-    console.log(this.acno);
- } 
+//   }
+//  acchange(event:any){
+//     this.acno=(event.target.value)
+//     console.log(this.acno);
+//  } 
 
- pswchange(event:any){
-  this.pass=event.target.value
- console.log(this.pass);
+//  pswchange(event:any){
+//   this.pass=event.target.value
+//  console.log(this.pass);
  
-}
+// }
 
-}
+// }
